@@ -27,3 +27,15 @@ output1=list(filter(lambda a:a>=15,numbers))
 output2=list(map(lambda b:b*10,output1))
 print(output1)
 print(output2)'''
+
+#Activity:
+
+#Write a program which can give the result shown in expected output.
+'''names=["karan", "karvin" , "poovin", "saran", "tharun" , "saranya" , "angela" , "sanjith"]
+initial=["a","b","c","d","e","f","g","h"]
+#Write your code 👇 below:
+output=list(map(lambda a,b:(a+"."+b).title(),names,initial))
+print(output)'''
+#Write your code 👆 above:
+#Expected Output:
+#['Karan.A', 'Karvin.B', 'Poovin.C', 'Saran.D', 'Tharun.E', 'Saranya.F', 'Angela.G', 'Sanjith.H']
