@@ -4,12 +4,13 @@ def verify():
     username=en1.get()
     email=en2.get()
     password=en3.get()
-    if username!="" or email!="" or password!="":
-        mesg=f"Hey {username}, you have created your account."
-        messagebox.showinfo("Create an Account",mesg)
+    if username=="" or email=="" or password=="":
+        mesg = f"Please fill out all the forms."
+        messagebox.showwarning("Create an Account", mesg)
     else:
-        mesg=f"Please fill out all the forms."
-        messagebox.showwarning("Create an Account",mesg)
+        mesg=f"Hey {username}, you have created an account."
+        messagebox.showinfo("Create an Account",mesg)
+
 from tkinter import *
 window=Tk()
 window.geometry("400x500")
