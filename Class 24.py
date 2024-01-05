@@ -11,6 +11,17 @@ def verify():
         mesg=f"Hey {username}, you have created an account."
         messagebox.showinfo("Create an Account",mesg)
 
+index=0
+
+def show():
+    global index
+    s=["","*"]
+    en3.config(show=s[index])
+    index=index+1
+    if index==2:
+        index=0
+
+
 from tkinter import *
 window=Tk()
 window.geometry("400x500")
@@ -32,4 +43,6 @@ en3=Entry(window,font=("Courier New Baltic",15),show="*")
 en3.pack(pady=5)
 bt=Button(window,text="Create Account",font=("Courier New Baltic",15,"bold"),bg="black",fg="white",command=verify)
 bt.pack(pady=5)
+btshow=Button(window,text="👀",font=("Courier New Baltic",12,"bold"),bg="black",fg="white",command=show)
+btshow.place(x=310,y=195)
 window.mainloop()
