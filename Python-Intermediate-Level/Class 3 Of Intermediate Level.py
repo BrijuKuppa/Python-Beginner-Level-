@@ -18,8 +18,10 @@ image_list=[pic_1,pic_2,pic_3,pic_4,pic_5]
 index=0
 lb1=Label(window,image=image_list[index])
 lb1.place(x=50,y=50)
+#Uncomment to Use
+
 #With Slideshow
-lb2=Label(window,text="Picture Slideshow",font=("ariel",15,"underline"))
+'''lb2=Label(window,text="Picture Slideshow",font=("ariel",15,"underline"))
 lb2.pack()
 def slideshow():
     global index
@@ -29,7 +31,8 @@ def slideshow():
     lb1=Label(window, image=image_list[index])
     lb1.place(x=50, y=50)
     lb1.after(5000,slideshow)
-slideshow()
+slideshow()'''
+
 #With Buttons
 '''def next():
     global index
