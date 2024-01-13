@@ -19,12 +19,12 @@ print(f"Bank Balance: ${bank_balance['lim']}")
 bank_balance["sam"]=bank_balance["sam"]-1000
 print(f"Bank Balance: ${bank_balance['sam']}")'''
 #Password Checker With Dictionary Data
-'''bank_acn={"Lim":12345, "Sam":3456}
+bank_acn={"Lim":12345, "Sam":3456}
 input_username=input("Enter Your Bank Account Username:").title()
 input_password=int(input("Enter Your Bank Account Password:"))
-if input_username!="Lim" and input_username!="Sam":
+if input_username not in bank_acn.keys():
     print("Incorrect information entered.")
 elif input_password==bank_acn[input_username]:
     print(f"{input_username}, you have been verified.")
 else:
-    print("Incorrect information entered.")'''
+    print("Incorrect information entered.")
