@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image,ImageTk
-#Photo Album
-window=Tk()
+#Practice Program-1: Photo Album
+'''window=Tk()
 window.geometry("500x400")
 window.title("Photo Album")
 pic_1=Image.open("Pic_1 (1).jpg")
@@ -49,4 +49,23 @@ btn1=Button(window,text="Next\n⏭️",command=next)
 btn1.place(x=380,y=320)
 btn2=Button(window,text="Previous\n    ⏮️️",command=back)
 btn2.place(x=100,y=320)
-window.mainloop()
+window.mainloop()'''
+#Practice Program-2: List-String
+'''s_list=['a', 'r', 'd', 'u', 'i', 'n', 'o']
+blank=""
+output=blank.join(s_list)
+print(output)
+print(output.upper())'''
+#Practice Program-3: Sring-List
+'''s="arduino"
+s_title="ARDUINO"
+output=list(s)
+print(output)
+output_title=list(s_title)
+print(output_title)'''
+#Random Number Generator
+'''import random
+random_number=random.randint(1,12)
+print(f"Your random number is: {random_number}")'''
+#Three Color Variable
+'''colors=["red","blue","green"]'''
