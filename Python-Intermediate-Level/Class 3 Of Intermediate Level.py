@@ -53,4 +53,5 @@ def back():
 btn1.place(x=380,y=320)
 btn2=Button(window,text="Previous\n    ⏮️️",command=back)
 btn2.place(x=100,y=320)'''
+
 window.mainloop()
