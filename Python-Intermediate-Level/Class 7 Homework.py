@@ -4,8 +4,8 @@ sum=num+1
 while True:
     print(sum)'''
 #Practice Program-2
-
-
+'''n=round(2.232323,3)
+print(n)'''
 #Practice Program-3
 '''s="Apple"
 print(s[0:3])'''
@@ -20,3 +20,7 @@ print(r)'''
 '''s="practice"
 print(s[:-1])'''
 #Practice Program-7
+'''s="beST"
+print(s.title())
+print(s.upper())
+print(s.lower())'''
