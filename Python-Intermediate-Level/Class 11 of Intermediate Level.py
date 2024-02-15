@@ -37,13 +37,4 @@ def light_1_0():
     lb_0.after(1000,light_1_0)
 light_1_0()
 
-
-
-
-
-
-
-
-
-
 window.mainloop()
