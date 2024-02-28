@@ -17,10 +17,12 @@ def weather():
     data=json.loads(response)
     temp=data["main"]["temp"]
     temp=round(temp-273.15,2)
+    humidity=data["main"]["humidity"]
+    cloud_description=data["weather"][0]["description"]
+    wind_speed=data["wind"]["speed"]
     print(f"Location: {place2.title()}, Temperature: {temp}")
-    database.update({"Location":place2,"Temprature":temp})
-    print(data)
+    database.update({"Location":place2,"Temperature":temp,"Humidity":humidity,"Cloud Description":cloud_description,"Wind Speed":wind_speed})
 
 while True:
     weather()
-    sleep(1)
+    sleep(5)
