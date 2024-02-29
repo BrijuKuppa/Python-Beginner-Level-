@@ -37,6 +37,7 @@ def weather():
     label_humidity.config(text=f"Humidity: {humidity}")
     place.config(text=place2.title())
     place.after(1000,weather)
+    print(data)
 weather()
 
 
