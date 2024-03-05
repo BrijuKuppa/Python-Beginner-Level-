@@ -19,7 +19,7 @@ if type1=="Espresso":
 elif type1=="Latte" or "Cappuccino":
     price2=price2+2.00
 elif type1=="Drip" or "Americano":
-    price2=price2+2.00
+    price2=price2+1.00
 
 if milk=="Whole":
     price3=price3+0.50
