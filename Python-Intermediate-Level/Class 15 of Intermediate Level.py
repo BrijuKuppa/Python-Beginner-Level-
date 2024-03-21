@@ -58,6 +58,38 @@ def check():
 def uncheck():
     list_box.itemconfig(list_box.curselection(), fg="black")
 
+def directions():
+    window.withdraw()
+    window2()
+
+def window2():
+    window2 = Toplevel()
+    window2.geometry("1400x500")
+    window2.title("To-Do App: How to Use")
+    directions_title=Label(window2,text="How to Use:",font=("Lucida Fax",10,"underline","bold"))
+    directions_lb2=Label(window2, text="This is an app used to make a list for your priorities. For example, if you want to make list for your chores, homework, and washing the dishes, you can. Here is how to to do that using the UI:", font=("Lucida Fax", 8))
+    directions_title2=Label(window2,text="How to Add to Listbox:",font=("Lucida Fax",10,"underline"))
+    directions_lb3=Label(window2, text="First, to add something to your list, click and type on the Textbox inbetween the buttons and the Listbox. \nThen, once your done with your list item, press 'enter' on your keyboard, or you can press the 'Add to To-Do List' button to add to the Listbox.", font=("Lucida Fax", 8))
+    directions_title3=Label(window2,text="How to Delete from Listbox:",font=("Lucida Fax",10,"underline"))
+    directions_lb5=Label(window2,text="First, select (click) the item you want to delete from your Listbox. \nThen, press the 'Delete selected item in To-Do List' button to delete the item.",font=("Lucida Fax",8))
+    directions_title4=Label(window2,text="How to show selected item has done in Listbox:",font=("Lucida Fax",10,"underline"))
+    directions_lb6=Label(window2,text="First, select (click) the item you want to select. \nThen, press the 'Show selected item as Done', now, it should show the text has green, which means Done.",font=("Lucida Fax",8))
+    directions_title5=Label(window2,text="How to show selected item has not done in Listbox:",font=("Lucida Fax",10,"underline"))
+    directions_lb7=Label(window2,text="First, select (click) the item you want to show as Not Done. \nMake sure the item has been showed as Done. \nThen, press the 'Show selected item as Not Done' button. \n Now, your Listbox item should be Not Done.",font=("Lucida Fax",8))
+    directions_title6=Label(window2,text="How to save list:",font=("Lucida Fax",10,"underline"))
+
+    directions_title.pack(pady=10)
+    directions_lb2.pack()
+    directions_title2.pack(pady=10)
+    directions_lb3.pack()
+    directions_title3.pack(pady=10)
+    directions_lb5.pack()
+    directions_title4.pack(pady=10)
+    directions_lb6.pack()
+    directions_title5.pack(pady=10)
+    directions_lb7.pack()
+    directions_title6.pack(pady=10)
+
 window.bind('<Return>',add_item)
 btn_add=Button(frame2,text="Add to\nTo-Do List",font=("Lucida Fax",10),command=add_btn)
 btn_add.grid(row=0,column=0,padx=10)
@@ -67,9 +99,9 @@ btn_save=Button(frame2,text="Save to\nFile",font=("Lucida Fax",10),command=save_
 btn_save.grid(row=0,column=2,padx=10)
 btn_show_as_done=Button(frame2,text="Show selected item\nas Done",font=("Lucida Fax",10),command=check)
 btn_show_as_done.grid(row=0,column=3,padx=10)
-btn_show_as_not_done=Button(frame2,text="Show selected item\nas not Done",font=("Lucida Fax",10),command=uncheck)
+btn_show_as_not_done=Button(frame2,text="Show selected item\nas Not Done",font=("Lucida Fax",10),command=uncheck)
 btn_show_as_not_done.grid(row=1,column=1,pady=10)
-btn_help=Button(frame2,text="How to use\nTo-Do App",font=("Lucida Fax",10),command=uncheck)
+btn_help=Button(frame2,text="How to use\nTo-Do App",font=("Lucida Fax",10),command=directions)
 btn_help.grid(row=1,column=2,padx=15)
 #Create a menu bar
 def do_something():
